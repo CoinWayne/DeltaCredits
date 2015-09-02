@@ -39,7 +39,9 @@ static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
 static const int64_t MAX_MONEY = 1000000 * COIN;
 static const int64_t COIN_YEAR_REWARD = 1 * CENT;
 static const int64_t MAX_MINT_PROOF_OF_STAKE = 1 * COIN;
+static const int64_t MAX_MINT_PROOF_OF_STAKE2 = 0.01 * COIN;
 static const int MODIFIER_INTERVAL_SWITCH = 1;
+static const int REWARD_FIX_BLOCK = 3000;
 
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 // Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp.
